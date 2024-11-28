@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Design Patterns Study with Next.js
+
+이 프로젝트는 JavaScript/TypeScript로 구현하는 디자인 패턴 학습을 위한 레포지토리입니다. Next.js와 React를 사용하여 실제 웹 애플리케이션에서 각 디자인 패턴이 어떻게 적용되는지 보여줍니다.
+
+## 학습 디자인 패턴
+
+- Observer Pattern (완료)
+- Singleton Pattern
+- Factory Pattern
+- Proxy Pattern
+- Composite Pattern
+- Strategy Pattern
+- Decorator Pattern
+- Adapter Pattern
+
+## Project Structure
+
+```
+.
+├── app/
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── observer/
+│   ├── singleton/
+│   ├── factory/
+│   ├── proxy/
+│   ├── composite/
+│   ├── strategy/
+│   ├── decorator/
+│   └── adapter/
+├── lib/
+│   ├── patterns/
+│   │   ├── observer.ts
+│   │   ├── singleton.ts
+│   │   ├── factory.ts
+│   │   ├── proxy.ts
+│   │   ├── composite.ts
+│   │   ├── strategy.ts
+│   │   ├── decorator.ts
+│   │   └── adapter.ts
+│   └── utils/
+├── types/
+└── styles/
+```
+
+## Directory Structure
+
+### `/app`
+
+Next.js 13+ App Router의 메인 디렉토리입니다.
+
+- `layout.tsx`: 전역 레이아웃 컴포넌트
+- `page.tsx`: 메인 페이지 컴포넌트
+
+### `/components`
+
+각 디자인 패턴을 구현한 React 컴포넌트들이 패턴별로 구성되어 있습니다.
+
+- `/observer`: Observer 패턴 예제 컴포넌트
+- `/singleton`: Singleton 패턴 예제 컴포넌트
+- `/factory`: Factory 패턴 예제 컴포넌트
+- `/proxy`: Proxy 패턴 예제 컴포넌트
+- `/composite`: Composite 패턴 예제 컴포넌트
+- `/strategy`: Strategy 패턴 예제 컴포넌트
+- `/decorator`: Decorator 패턴 예제 컴포넌트
+- `/adapter`: Adapter 패턴 예제 컴포넌트
+
+### `/lib`
+
+핵심 패턴 구현체와 유틸리티 함수들을 포함합니다.
+
+- `/patterns`: 각 디자인 패턴의 실제 TypeScript 구현체
+- `/utils`: 유틸리티 함수들
+
+### `/types`
+
+TypeScript 타입 정의 파일들을 포함합니다.
+
+### `/styles`
+
+전역 스타일 및 CSS 모듈 파일들을 포함합니다.
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# 설치
+pnpm install
+
+# 개발 서버 실행
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+http://localhost:3000 에서 각 디자인 패턴의 실제 구현과 예제를 확인할 수 있습니다.
