@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Link from "next/link"; // Link 컴포넌트 추가
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,7 +24,12 @@ export default function RootLayout({
               <div className="flex justify-between h-16">
                 <div className="flex">
                   <div className="flex-shrink-0 flex items-center">
-                    <h1 className="text-xl font-bold">Design Patterns</h1>
+                    <Link
+                      href="/"
+                      className="text-xl font-bold hover:text-gray-700"
+                    >
+                      Design Patterns
+                    </Link>
                   </div>
                 </div>
               </div>
